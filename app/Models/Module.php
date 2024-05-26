@@ -7,5 +7,15 @@ use Illuminate\Database\Eloquent\Model;
 
 class Module extends Model
 {
-    use HasFactory;
+   //Relacion Uno a Muchos (Inversa) 
+    public function teacher()
+    {
+        return $this->belongsTo('App\Models\Teacher');
+    }
+
+    //Relacion Uno a Muchos (Inversa) 
+    public function student()
+    {
+        return $this->belongsTo('App\Models\Student');
+    }
 }

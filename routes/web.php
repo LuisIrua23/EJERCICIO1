@@ -10,10 +10,11 @@ use App\Models\Student;
 use Illuminate\Support\Facades\Route;
 
 
-Route::get('/', function () {           //primera vista de modulos
-    $modules = Module::orderBy('id', 'desc')->get();
-    return view('module_carpet.listar',compact('modules'));
-});
+// Route::get('/', function () {           //primera vista de modulos
+//     $modules = Module::orderBy('id', 'desc')->get();
+//     return view('module_carpet.listar',compact('modules'));
+// });
+
 // Route::get('/', function () {
 //     return view('welcome');
 // });
@@ -21,11 +22,12 @@ Route::get('/', function () {           //primera vista de modulos
 
 Route::get('module/listar',[ModuleController::class,'listar'])->name('module.listar');
 Route::get('module/create',[ModuleController::class,'create'])->name('module.create');
-Route::post('module/store', [ModuleController::class,'store'])->name('module.store');
+Route::post('module/store',[ModuleController::class,'store'])->name('module.store');
+Route::get('module/{dato}',[ModuleController::class,'show'])->name('module.show');
 Route::put('module/{dato}',[ModuleController::class,'update'])->name('module.update');  
 Route::delete('module/{dato}',[ModuleController::class,'destroy'])->name('module.destroy');
 Route::get('module/{dato}/editar',[ModuleController::class,'edit'])->name('module.edit'); 
-Route::get('module/{dato}',[ModuleController::class,'show'])->name('module.show');
+
 
 
 Route::get('student/listar',[StudentController::class,'listar'])->name('student.listar');

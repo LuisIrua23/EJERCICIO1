@@ -13,7 +13,24 @@ return new class extends Migration
     {
         Schema::create('modules', function (Blueprint $table) {
             $table->id();
+            $table->string('codigo');
+            $table->string('nombre_modulo');
+            //Atributos foraneos
+            $table->unsignedBigInteger('id_profesor')->nullable();
+            $table->unsignedBigInteger('id_student')->nullable();
+
+            //referenciando la tabla users
+            $table->foreign('id_profesor')
+                ->references('id')
+                ->on('teachers')->onDelete('set null');
+
+            //referenciando la tabla categorias    
+            $table->foreign('id_student')
+                ->references('id')
+                ->on('students')->onDelete('set null');
+
             $table->timestamps();
+
         });
     }
 
