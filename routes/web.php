@@ -10,10 +10,10 @@ use App\Models\Student;
 use Illuminate\Support\Facades\Route;
 
 
-// Route::get('/', function () {           //primera vista de modulos
-//     $modules = Module::orderBy('id', 'desc')->get();
-//     return view('module_carpet.listar',compact('modules'));
-// });
+ Route::get('/', function () {           //primera vista de modulos
+    $modules = Module::orderBy('id', 'desc')->get();
+return view('module_carpet.listar',compact('modules'));
+});
 
 // Route::get('/', function () {
 //     return view('welcome');
