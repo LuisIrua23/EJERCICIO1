@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <title>Document</title>
 </head>
@@ -57,6 +58,8 @@
         <div class="text-center mb-4">
             <h2>Module Table</h2>
         </div>
+
+        
 
         <a class="btn btn-warning" href="{{ route('student.create') }}">Crear Estudiantes</a>
         <a class="btn btn-warning" href="{{ route('teacher.create') }}">Crear Profesor</a>
