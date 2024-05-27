@@ -6,7 +6,10 @@
     <title>Document</title>
 </head>
 <body>
-<table class="table">
+    <center>
+    <table class="tabler" >
+    </center>
+
                     <td>
                         <h4>Id
                     </td>
