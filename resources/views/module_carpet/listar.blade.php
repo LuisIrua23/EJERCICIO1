@@ -57,6 +57,9 @@
         <div class="text-center mb-4">
             <h2>Module Table</h2>
         </div>
+
+        <a href="{{ route('student.create') }}">Crear Estudiantes</a>
+        <a href="{{ route('student.listar') }}">Listar Estudiantes</a>
         <table class="table table-bordered table-striped">
             <thead class="thead-dark">
                 <tr>
