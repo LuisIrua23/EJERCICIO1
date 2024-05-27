@@ -58,12 +58,12 @@
             <h2>Module Table</h2>
         </div>
 
-        <a href="{{ route('student.create') }}">Crear Estudiantes</a>
-        <a href="{{ route('teacher.create') }}">Crear Profesor</a>
+        <a class="btn btn-warning" href="{{ route('student.create') }}">Crear Estudiantes</a>
+        <a class="btn btn-warning" href="{{ route('teacher.create') }}">Crear Profesor</a>
 
-        <a href="{{ route('student.listar') }}">Listar Estudiantes</a>
-        <a href="{{ route('teacher.listar') }}">Listar Profesor</a>
-        <a href="{{ route('module.create') }}">Crear Modulo</a>
+        <a class="btn btn-warning" href="{{ route('student.listar') }}">Listar Estudiantes</a>
+        <a class="btn btn-warning" href="{{ route('teacher.listar') }}">Listar Profesor</a>
+        <a class="btn btn-warning" href="{{ route('module.create') }}">Crear Modulo</a>
         <table class="table table-bordered table-striped">
             <thead class="thead-dark">
                 <tr>
