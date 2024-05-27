@@ -28,6 +28,7 @@
                         <br>
                         <input class="form-control"  type="text" name="id_profesor" required>
                     </label>
+                    <br>
                     <label  class="form-label">
                         Id alumno
                         <br>
